@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:/OneDrive/Projects/Isna_Crawler/.idea/Asriran_Crawler.iml" filepath="C:/OneDrive/Projects/Isna_Crawler/.idea/Asriran_Crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Isna_Crawler.iml" filepath="$PROJECT_DIR$/.idea/Isna_Crawler.iml" />
     </modules>
   </component>
 </project>

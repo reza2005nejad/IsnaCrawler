@@ -11,12 +11,13 @@ class IsnaSpider(CrawlSpider):
     name = "isna"
     allowed_domains = ["www.isna.ir"]
     start_urls = [
-      "http://www.isna.ir/page/archive.xhtml?date=1395%2F02%2F04&page=1&lang=fa&pageSize=200&cerveesCode=all",
-      # "http://www.asriran.com/fa/archive?service_id=-1&sec_id=-1&cat_id=-1&rpp=100&from_date=1384/01/01&to_date=1395/02/29&p=1",
-      # "http://www.asriran.com/fa/archive?service_id=-1&sec_id=-1&cat_id=-1&rpp=100&from_date=1384/01/01&to_date=1395/02/29&p=2",
-      # "http://www.asriran.com/fa/archive?service_id=-1&sec_id=-1&cat_id=-1&rpp=100&from_date=1384/01/01&to_date=1395/02/29&p=3",
-      # "http://www.asriran.com/fa/archive?service_id=-1&sec_id=-1&cat_id=-1&rpp=100&from_date=1384/01/01&to_date=1395/02/29&p=4",
-      # "http://www.asriran.com/fa/archive?service_id=-1&sec_id=-1&cat_id=-1&rpp=100&from_date=1384/01/01&to_date=1395/02/29&p=5",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=1&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=2&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=3&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=4&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=5&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=6&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=7&lang=fa&pageSize=20&cerveesCode=all",
     ]
     rules = [Rule(LinkExtractor(allow=('/fa/news/\d+/', )), callback='parse_item', follow=False)]
 
