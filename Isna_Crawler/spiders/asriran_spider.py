@@ -11,15 +11,11 @@ class IsnaSpider(CrawlSpider):
     name = "isna"
     allowed_domains = ["www.isna.ir"]
     start_urls = [
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=1&lang=fa&pageSize=20&cerveesCode=all",
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=2&lang=fa&pageSize=20&cerveesCode=all",
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=3&lang=fa&pageSize=20&cerveesCode=all",
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=4&lang=fa&pageSize=20&cerveesCode=all",
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=5&lang=fa&pageSize=20&cerveesCode=all",
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=6&lang=fa&pageSize=20&cerveesCode=all",
-        "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=7&lang=fa&pageSize=20&cerveesCode=all",
+        "http://www.isna.ir/",
+        # "http://www.isna.ir/page/archive.xhtml?date=1395%2F03%2F01&page=1&lang=fa&pageSize=20&cerveesCode=all",
+
     ]
-    rules = [Rule(LinkExtractor(allow=('/fa/news/\d+/', )), callback='parse_item', follow=False)]
+    rules = [Rule(LinkExtractor(allow=('/fa/news/\d+/', )), callback='parse_item', follow=True)]
 
 
 
