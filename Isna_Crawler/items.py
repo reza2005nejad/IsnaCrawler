@@ -10,10 +10,11 @@ import scrapy
 
 class IsnaCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
-    titr = scrapy.Field()
-    # category = scrapy.Field()
+    title = scrapy.Field()
     body = scrapy.Field()
-    # tags = scrapy.Field()
+    category = scrapy.Field()
+    tags = scrapy.Field()
+    pubDate = scrapy.Field()
 
 
 class CraigslistSampleItem(scrapy.Item):
