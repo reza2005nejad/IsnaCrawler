@@ -7,7 +7,6 @@
 
 import scrapy
 
-
 class IsnaCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
